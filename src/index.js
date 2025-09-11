@@ -4,7 +4,6 @@ addEventListener("fetch", (event) => {
 });
 
 const dockerHub = "https://registry-1.docker.io";
-const customDomain = 'guoliangjun.com';
 const routes = {
   // production
   ["docker." + CUSTOM_DOMAIN]: dockerHub,
@@ -16,8 +15,8 @@ const routes = {
   ["cloudsmith." + CUSTOM_DOMAIN]: "https://docker.cloudsmith.io",
   ["ecr." + CUSTOM_DOMAIN]: "https://public.ecr.aws",
 
-  // glj
-  ["docker-glj." + CUSTOM_DOMAIN]: dockerHub,
+  // test
+  ["d." + CUSTOM_DOMAIN]: dockerHub,
 };
 
 function routeByHosts(host) {
